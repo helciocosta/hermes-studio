@@ -28,6 +28,8 @@ services:
       - HERMES_WEB_UI_DISABLE_GATEWAY_AUTOSTART=0
       - HERMES_WEB_UI_DISABLE_MCP_AUTOINJECT=0
       - HERMES_WEB_UI_DISABLE_SKILL_INJECTION=0
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENCODE_ZEN_API_KEY=${OPENCODE_ZEN_API_KEY}
     restart: unless-stopped
     stdin_open: true
     tty: true
